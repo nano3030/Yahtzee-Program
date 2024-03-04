@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Yahtzee_Program.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="LblHeading"
+               Text="Winner! Winner! Chicken Dinner!"
+               FontSize="Large"
+               BackgroundColor="DarkBlue"
+               HorizontalOptions="Center"
+               TextColor="White"
+               Grid.Row="0"
+               Grid.Column="0"
+               Grid.ColumnSpan="2" />
+
+        <Button x:Name="BtnPlay"
+                Text="Play"
+                Clicked="btnPlay_Clicked"
+                HorizontalOptions="Center"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Grid.Row="1"
+                Grid.Column="0"
+                CornerRadius="10" />
+
+        <Button x:Name="BtnReset"
+                Text="Reset"
+                Clicked="btnReset_Clicked"
+                HorizontalOptions="Center"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Grid.Row="1"
+                Grid.Column="1"
+                CornerRadius="10" />
+
+
+
+
+        <Label x:Name="LblWinner"
+               Text="Lucky Winners!"
+               FontSize="16"
+               BackgroundColor="LightGray"
+               TextColor="Black"
+               Grid.Row="2"
+               Grid.Column="0"
+               Grid.ColumnSpan="2" />
+
+
+    </Grid>
+
+</ContentPage>
